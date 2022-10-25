@@ -1,5 +1,6 @@
 package com.formation.parking.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,17 @@ public class ParkingController {
 	
 	@RequestMapping(path = "/api/parkings", method = RequestMethod.GET)
 	public List<Parking> getListeParkings(){
-		return null;
+		
+		Parking parkingTest = new Parking();
+		parkingTest.setNom("Parking de test");
+		parkingTest.setNbPlacesDispo(125);
+		parkingTest.setNbPlacesTotal(300);
+		parkingTest.setStatut("OUVERT");
+		parkingTest.setHeureMaj("20h15");
+		
+		ArrayList<Parking> liste = new ArrayList<Parking>();
+		liste.add(parkingTest);
+		return liste;
 	}
 
 }
