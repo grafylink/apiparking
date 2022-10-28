@@ -20,5 +20,4 @@ public class ParkingController {
 	public List<Parking> getListeParkings(){
 		return parkingService.getListeParkings();
 	}
-
 }
