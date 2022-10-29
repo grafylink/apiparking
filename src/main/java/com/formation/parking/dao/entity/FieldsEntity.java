@@ -18,6 +18,7 @@ public class FieldsEntity {
 	private int grpStatut;
 	@JsonProperty(value = "grp_horodatage")
 	private String grpHorodatage;
+	
 	public String getIdObj() {
 		return idObj;
 	}
@@ -55,6 +56,4 @@ public class FieldsEntity {
 		this.grpHorodatage = grpHorodatage;
 	}
 	
-	
-
 }
